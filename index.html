@@ -17,10 +17,10 @@
     <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-    <title>Hello, world!</title>
+    <title>Wensau Blog</title>
 </head>
 <body style="background-color: #efedee">
-<div style="background-color: #3c3f41;width: 100%" id="x1">
+<div style="background-color: #3c3f41;width: 100%">
     <div class="jumbotron" style="background-color: #3c3f41;margin: 0">
         <div class="container" style="text-align: center;color: #f7f5f6">
             <h1 class="display-5">Welcome To Wensau</h1>
@@ -45,8 +45,7 @@
                      aria-labelledby="collapseListGroupHeading1" style="text-align: center">
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <!-- 利用data-target指定URL -->
-                            <a>分组1-1</a>
+                            <a onclick="x1()">05月22日</a>
                         </li>
                         <li class="list-group-item">
                             <a>分组1-1</a>
@@ -65,12 +64,15 @@
             </div><!--panel end-->
         </div>
     </div>
-    <div class="col-md-10">
-        
+    <div class="col-md-10" id="x1">
     </div>
 </div>
 </body>
 <script>
-
+    function x1() {
+        var elementObject = document.getElementById("x1");
+        var strIframe = '<iframe class="col-md-12" frameborder="0" scrolling="no" style="height: 2325px" src="522.html"></iframe>';
+        elementObject.innerHTML = strIframe;
+    }
 </script>
 </html>
